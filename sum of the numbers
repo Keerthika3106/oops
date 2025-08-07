@@ -1,32 +1,24 @@
 package sumofnumbers;
-
-
 public class Sum {
+	
+	void add(int a,int b)
+	{
+		int sum=0;
+		for(int i=a;i<=b;i++) {
+			sum=sum+i;
+		}
+		System.out.println("The Sum of "+a+ " to "+b+ " is " +sum);
+	}
 	public static void main(String[] args) {
-		int a=0;
-		int b=0;
-		int c=0;
-		int d=0;
-		for(int i=0;i<=10;i++)
-		{
-			a+=i;
-			
-		}
-		System.out.println("The sum of 1 to 10 is "+a);
-		for(int i=0;i<=50;i++) {
-			b+=i;
-			
-		}
-		System.out.println("The sum of 1 to 50 is "+b);
-		for(int i=50;i<=100;i++) {
-			c+=i;
-			
-		}
-		System.out.println("The sum of 50 to 100 is "+c);
-		for(int i=0;i<=100;i++) {
-			d+=i;
-			
-		}
-		System.out.println("The sum of 1 to 100 is "+d);
+		
+		Sum num =new Sum();
+		num.add(1, 10);
+		num.add(1,50);
+		num.add(50,100);
+		num.add(1, 100);
+		num.add(1, 1);
+		
 	}
 }
+
+
