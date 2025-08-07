@@ -24,9 +24,11 @@ public class A {
 		
 		A num=new A();
 		num.prime(2);
-		num.prime(11);
 		num.prime(15);
-		
+		num.prime(17);
+		num.prime(1);
+		num.prime(0);
+
 
 	}
 
