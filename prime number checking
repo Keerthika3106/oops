@@ -1,0 +1,33 @@
+package primenumber;
+
+public class A {
+	
+ void prime(int n) {
+	 if(n<=1) {
+		 System.out.println("This is not a Prime Number");
+		 return;
+	 }
+	 else {
+		 for(int i=2;i<=Math.sqrt(n);i++) {
+			 if(n%i==0) {
+				 System.out.println("This is not a Prime Number");
+				 return;
+
+			 }
+			
+			
+		 }
+		 System.out.println("This is a Prime Number");
+	 }
+ }
+	public static void main(String[] args) {
+		
+		A num=new A();
+		num.prime(2);
+		num.prime(11);
+		num.prime(15);
+		
+
+	}
+
+}
