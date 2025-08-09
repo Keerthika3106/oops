@@ -1,0 +1,24 @@
+package inheritance;
+
+class A {
+	
+ void get() {
+		System.out.println("It is a Super Class");
+		
+	}
+	
+   static class B extends A{
+		void set() {
+			System.out.println("It is a Sub Class");
+		}
+	}
+
+	public static void main(String[] args) {
+		B num=new B();
+		num.set();
+		
+		
+
+	}
+
+}
