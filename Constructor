@@ -1,0 +1,19 @@
+package constructor;
+
+public class Box {
+	
+	double w,h,d;
+	Box(){
+		System.out.println("This is a default Constructor");
+		w=10;
+		h=15;
+		d=20;
+		System.out.println("The value of w,h,d is "+w+","+h+","+d);
+	}
+
+	public static void main(String[] args) {
+		
+		Box ob=new Box();
+	}
+
+}
