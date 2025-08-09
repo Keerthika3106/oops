@@ -1,0 +1,23 @@
+package overriding;
+
+public class A {
+	
+	public void set() {
+		System.out.println("this is Super Class");
+	}
+	
+	 static class B extends A
+	{
+	 @Override public void set() {
+			System.out.println("This is Sub Class");
+		}
+	}
+
+	public static void main(String[] args) {
+		
+	B ob = new B();
+		ob.set();
+
+	}
+
+}
